@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block body %}
+<h3>Kiralık Evler</h3>
+<hr>
+<style>
+body {
+    background-color: #f0ffff;
+}
+
+</style>
+<div class="col-md-6 offset-md-1">
+<div class="card mb-4" style="width: 800px;height: 388px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'mysite/images/rent.jpeg' %}" class="card-img" alt="..." style="width:100%; height: 96%;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Özkan Günübirlik Ev</h5>
+        <p class="card-text">2+1 ve 1+1 Günlük Kiralık Evler</p>
+        <a href="https://www.google.com/maps/place/%C3%96zkan+G%C3%BCn%C3%BCbirlik+Ev/@36.7669771,35.7895303,19.42z/data=!4m8!1m2!2m1!1zeXVtdXJ0YWzEsWsga2lyYWzEsWsgZXYgZ8O8bmzDvGs!3m4!1s0x1528af1a5160758b:0x3b787b5297630406!8m2!3d36.767331!4d35.7891067" target="_blank" class="btn btn-danger">Konum</a>
+
+        <hr>
+        <p>Evleri incelemek için seçim yapabilirsiniz.</p>
+        <a href="/rent/ozkan" class="btn btn-success">Daire-1 (2+1)</a>
+        <a href="/rent/ozkan1" class="btn btn-primary">Daire-2 (1+1)</a>
+        <a href="/rent/ozkan2" class="btn btn-warning">Daire-3 (1+1)</a>
+        <hr>
+        <p>İletişim Numaları:</p>
+
+        <h5>0535-510-86-20</h5>
+        <h5>0541-285-38-45</h5>
+
+      </div>
+      
+  </div>
+</div>
+</div>
+
+{% endblock  %}
